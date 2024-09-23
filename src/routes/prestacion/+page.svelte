@@ -18,7 +18,7 @@
                 </ul>
             </li>
             <li class="lista-uno"><a href="/prestacion" class="mi-enlace">PRESTACION</a></li>
-            <li class="lista-uno"><a href="/al" class="mi-enlace">INICIAR SESION</a></li>
+            <li class="lista-uno"><a href="/al_novedades" class="mi-enlace">INICIAR SESION</a></li>
         </ul>
     </div>
 </nav>
