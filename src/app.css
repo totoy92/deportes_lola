@@ -23,10 +23,10 @@ body {
 nav {
   background-color: #f4f5f7;
   text-align: center;
-  padding: 5px;
+  padding: 10px; /* Aumentar padding */
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -35,7 +35,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3%;
+  padding: 5%; /* Aumentar espacio para móviles */
   font-weight: bold;
   background-size: cover;
   background-position: -70px center;
@@ -46,7 +46,7 @@ nav {
   display: inline-block;
   margin: 2%;
   list-style: none;
-  padding: 3px;
+  padding: 5px; /* Aumentar padding */
 }
 
 .mi-enlace {
@@ -61,30 +61,30 @@ nav {
 main, section {
   max-width: 800px;
   margin: 2em auto;
-  padding: 1em;
+  padding: 20px; /* Más padding */
   background-color: rgb(252, 250, 250);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 2px solid #0e0d0d;
 }
 
 .servicios {
-  width: 100%; 
+  width: 100%;
   height: 17vh;
-  padding: 10px; 
+  padding: 15px; /* Aumentar padding */
   background-color: rgb(253, 252, 252); 
-  border: 2px solid #0e0d0d; 
-  position: fixed; 
-  bottom: 0; 
-  left: 0; 
+  border: 2px solid #0e0d0d;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   z-index: 1000;
 }
 
 .noticias {
   width: 17%;
-  padding-right: 10px;
+  padding: 10px;
   background-color: white;
   border: 3px solid #0e0d0d;
-  margin: 6px;
+  margin: 10px; /* Aumentar márgenes */
   float: right;
 }
 
@@ -92,7 +92,7 @@ main, section {
   max-width: 400px;
   margin: 50px auto;
   background-color: #12bee9;
-  padding: 20px;
+  padding: 30px; /* Aumentar padding */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -104,12 +104,12 @@ form {
 }
 
 label {
-  margin-bottom: 8px;
+  margin-bottom: 10px; /* Espacio extra */
 }
 
 textarea {
-  padding: 8px;
-  margin-bottom: 16px;
+  padding: 10px; /* Aumentar padding */
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -117,6 +117,7 @@ textarea {
 input[type="submit"] {
   background-color: #0ca5aa;
   color: white;
+  padding: 12px; /* Aumentar tamaño del botón */
   cursor: pointer;
 }
 
@@ -125,23 +126,19 @@ input[type="submit"]:hover {
 }
 
 table {
-  width: 80%;
+  width: 90%; /* Más ancho en móviles */
   border-collapse: collapse;
   margin: 20px auto;
 }
 
 td {
   border: 3px solid #0f0f0f;
-  padding: 10px;
+  padding: 15px; /* Más espacio en celdas */
   text-align: center;
 }
 
 th {
   background-color: #05f3fc;
-}
-
-td {
-  background-color: #eef1f1;
 }
 
 .mi-texto {
@@ -180,47 +177,34 @@ td {
   display: block;
 }
 
-
+/* Media Queries para dispositivos móviles */
 @media only screen and (max-width: 768px) {
-  .nav menu {
-    flex-direction: column; 
+  nav {
+    padding: 20px; /* Mayor padding para espaciar mejor los elementos */
   }
   
+  .nav menu {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center;
+  }
+
   .lista-uno li {
-    margin-left: 0; 
+    margin-left: 0; /* Elimina el margen en móviles */
+    margin-bottom: 10px; /* Añade espacio entre elementos */
   }
 
   .servicios {
     height: auto;
-    padding: 5px;
+    padding: 10px;
   }
 
   .noticias {
-    width: 100%; 
+    width: 100%; /* Noticias ocupan todo el ancho */
     margin: 10px 0;
   }
 
   main, section {
-    width: 90%; 
-    padding: 10px;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .nav menu {
-    flex-direction: row;
-  }
-
-  .lista-uno li {
-    margin-left: 120px; 
-  }
-
-  .noticias {
-    width: 17%;
-    float: right;
-  }
-
-  main, section {
-    max-width: 800px;
+    width: 95%; /* Mayor ancho en móviles */
+    padding: 15px;
   }
 }
