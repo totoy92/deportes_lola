@@ -14,7 +14,7 @@
 <nav class="menu">
 	<img src={logo} width="150" height="150" alt="LOLA DEPORTES" />
 	<ul class="lista-uno">
-		<li class="lista-uno"><a href="/}al_novedades" class="mi-enlace">NOVEDADES</a></li>
+		<li class="lista-uno"><a href="/al_novedades" class="mi-enlace">NOVEDADES</a></li>
 		<li class="lista-uno dropdown">
 			<a href="." class="mi-enlace">TORNEOS</a>
 			<ul class="dropdown-content">
