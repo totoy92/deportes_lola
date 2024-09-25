@@ -18,15 +18,14 @@
 		<li class="lista-uno dropdown">
 			<a href="." class="mi-enlace">TORNEOS</a>
 			<ul class="dropdown-content">
-				<li><a href="/al.programacion" class="mi-enlace">Programación</a></li>
-				<li><a href="/al.inscribirse" class="mi-enlace">Inscriptos</a></li>
+				<li><a href="/al_programacion" class="mi-enlace">Programación</a></li>
+				<li><a href="/al_inscribirse" class="mi-enlace">Inscriptos</a></li>
 			</ul>
 		</li>
 		<li class="lista-uno"><a href="/al_pretar" class="mi-enlace">PRESTACION</a></li>
 		<li class="lista-uno"><a href="/" class="mi-enlace">CERRAR SESION</a></li>
 	</ul>
 </nav>
-
 
 <section>
     <h2>Historial de Préstamos y Devoluciones</h2>

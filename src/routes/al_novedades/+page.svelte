@@ -9,8 +9,8 @@
 		<li class="lista-uno dropdown">
 			<a href="." class="mi-enlace">TORNEOS</a>
 			<ul class="dropdown-content">
-				<li><a href="C:\Users\Emmanuel\Documents\deportes_lola\src\routes\al_programacion" class="mi-enlace">Programación</a></li>
-				<li><a href="/al.inscribirse" class="mi-enlace">Inscriptos</a></li>
+				<li><a href="/al_programacion" class="mi-enlace">Programación</a></li>
+				<li><a href="/al_inscribirse" class="mi-enlace">Inscriptos</a></li>
 			</ul>
 		</li>
 		<li class="lista-uno"><a href="/al_pretar" class="mi-enlace">PRESTACION</a></li>
