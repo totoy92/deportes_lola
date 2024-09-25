@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -21,16 +22,15 @@ body {
 
 nav {
   background-color: #f4f5f7;
-  color: rgb(250, 248, 248);
   text-align: center;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  width: 100%; 
+  width: 100%;
 }
 
-.nav menu{
+.nav menu {
   width: 100%;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@ nav {
   display: inline-block;
   margin: 2%;
   list-style: none;
-  padding: 3;
+  padding: 3px;
 }
 
 .mi-enlace {
@@ -58,20 +58,11 @@ nav {
   color: yellow;
 }
 
-main {
+main, section {
   max-width: 800px;
   margin: 2em auto;
   padding: 1em;
   background-color: rgb(252, 250, 250);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 2px solid #0e0d0d;
-}
-
-section {
-  max-width: 800px;
-  margin: 2em auto;
-  padding: 1em;
-  background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 2px solid #0e0d0d;
 }
@@ -82,13 +73,11 @@ section {
   padding: 10px; 
   background-color: rgb(253, 252, 252); 
   border: 2px solid #0e0d0d; 
-  box-sizing: border-box; 
   position: fixed; 
   bottom: 0; 
   left: 0; 
   z-index: 1000;
 }
-
 
 .noticias {
   width: 17%;
@@ -97,16 +86,6 @@ section {
   border: 3px solid #0e0d0d;
   margin: 6px;
   float: right;
-}
-
-
-section {
-  max-width: 800px;
-  margin: 2em auto;
-  padding: 1em;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 3px solid #0e0d0d;
 }
 
 .formulario-uno {
@@ -122,12 +101,10 @@ form {
   display: flex;
   flex-direction: column;
   border-radius: 4px;
-
 }
 
 label {
   margin-bottom: 8px;
-
 }
 
 textarea {
@@ -135,20 +112,16 @@ textarea {
   margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
-
 }
 
 input[type="submit"] {
   background-color: #0ca5aa;
   color: white;
   cursor: pointer;
-
 }
-
 
 input[type="submit"]:hover {
   background-color: #0fe1f0;
-
 }
 
 table {
@@ -165,27 +138,20 @@ td {
 
 th {
   background-color: #05f3fc;
-
 }
 
 td {
-
   background-color: #eef1f1;
-
 }
 
 .mi-texto {
-
   color: red;
-
-
 }
 
 .logo-y-enlaces {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
-
 
 .lista-uno {
   list-style: none;
@@ -195,7 +161,7 @@ td {
 }
 
 .lista-uno li {
-  margin-left: 120px; 
+  margin-left: 120px;
 }
 
 .mi-enlace {
@@ -208,10 +174,53 @@ td {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .nav menu {
+    flex-direction: column; 
+  }
+  
+  .lista-uno li {
+    margin-left: 0; 
+  }
+
+  .servicios {
+    height: auto;
+    padding: 5px;
+  }
+
+  .noticias {
+    width: 100%; 
+    margin: 10px 0;
+  }
+
+  main, section {
+    width: 90%; 
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .nav menu {
+    flex-direction: row;
+  }
+
+  .lista-uno li {
+    margin-left: 120px; 
+  }
+
+  .noticias {
+    width: 17%;
+    float: right;
+  }
+
+  main, section {
+    max-width: 800px;
+  }
+}
