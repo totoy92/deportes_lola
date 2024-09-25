@@ -8,7 +8,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 body {
@@ -23,11 +23,23 @@ body {
 nav {
   background-color: #f4f5f7;
   text-align: center;
-  padding: 10px; /* Aumentar padding */
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.logo-y-enlaces {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espaciado entre logo y enlaces */
+  width: 100%;
+}
+
+.logo {
+  max-width: 150px; /* Tamaño del logo por defecto */
+  height: auto;
 }
 
 .nav menu {
@@ -35,7 +47,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5%; /* Aumentar espacio para móviles */
+  padding: 5%;
   font-weight: bold;
   background-size: cover;
   background-position: -70px center;
@@ -46,7 +58,7 @@ nav {
   display: inline-block;
   margin: 2%;
   list-style: none;
-  padding: 5px; /* Aumentar padding */
+  padding: 5px;
 }
 
 .mi-enlace {
@@ -61,7 +73,7 @@ nav {
 main, section {
   max-width: 800px;
   margin: 2em auto;
-  padding: 20px; /* Más padding */
+  padding: 20px;
   background-color: rgb(252, 250, 250);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 2px solid #0e0d0d;
@@ -70,8 +82,8 @@ main, section {
 .servicios {
   width: 100%;
   height: 17vh;
-  padding: 15px; /* Aumentar padding */
-  background-color: rgb(253, 252, 252); 
+  padding: 15px;
+  background-color: rgb(253, 252, 252);
   border: 2px solid #0e0d0d;
   position: fixed;
   bottom: 0;
@@ -84,7 +96,7 @@ main, section {
   padding: 10px;
   background-color: white;
   border: 3px solid #0e0d0d;
-  margin: 10px; /* Aumentar márgenes */
+  margin: 10px;
   float: right;
 }
 
@@ -92,7 +104,7 @@ main, section {
   max-width: 400px;
   margin: 50px auto;
   background-color: #12bee9;
-  padding: 30px; /* Aumentar padding */
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -104,11 +116,11 @@ form {
 }
 
 label {
-  margin-bottom: 10px; /* Espacio extra */
+  margin-bottom: 10px;
 }
 
 textarea {
-  padding: 10px; /* Aumentar padding */
+  padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -117,7 +129,7 @@ textarea {
 input[type="submit"] {
   background-color: #0ca5aa;
   color: white;
-  padding: 12px; /* Aumentar tamaño del botón */
+  padding: 12px;
   cursor: pointer;
 }
 
@@ -126,14 +138,14 @@ input[type="submit"]:hover {
 }
 
 table {
-  width: 90%; /* Más ancho en móviles */
+  width: 90%;
   border-collapse: collapse;
   margin: 20px auto;
 }
 
 td {
   border: 3px solid #0f0f0f;
-  padding: 15px; /* Más espacio en celdas */
+  padding: 15px;
   text-align: center;
 }
 
@@ -141,56 +153,40 @@ th {
   background-color: #05f3fc;
 }
 
+td {
+  background-color: #eef1f1;
+}
+
 .mi-texto {
   color: red;
-}
-
-.logo-y-enlaces {
-  display: flex;
-  align-items: center;
-}
-
-.lista-uno {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.lista-uno li {
-  margin-left: 120px;
-}
-
-.mi-enlace {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /* Media Queries para dispositivos móviles */
 @media only screen and (max-width: 768px) {
   nav {
-    padding: 20px; /* Mayor padding para espaciar mejor los elementos */
+    flex-direction: column;
+    padding: 20px;
   }
-  
+
+  .logo-y-enlaces {
+    flex-direction: column; /* Cambiar la disposición a columna */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 110px; /* Reducir tamaño del logo en móviles */
+    margin-bottom: 15px; /* Añadir espacio debajo del logo */
+  }
+
   .nav menu {
-    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    flex-direction: column;
     align-items: center;
   }
 
   .lista-uno li {
-    margin-left: 0; /* Elimina el margen en móviles */
-    margin-bottom: 10px; /* Añade espacio entre elementos */
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 
   .servicios {
@@ -199,12 +195,12 @@ th {
   }
 
   .noticias {
-    width: 100%; /* Noticias ocupan todo el ancho */
+    width: 100%;
     margin: 10px 0;
   }
 
   main, section {
-    width: 95%; /* Mayor ancho en móviles */
+    width: 95%;
     padding: 15px;
   }
 }
