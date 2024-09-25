@@ -27,6 +27,9 @@
 			experience: '1 año'
 		}
 	];
+
+	let hayRegistros =  registroInscripcion.length > 0;
+
 </script>
 
 <nav class="menu">
@@ -86,4 +89,6 @@
 			</tr>
 		{/if}
 	</tbody>
-</table>
+</table>	
+		
+	
