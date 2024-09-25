@@ -43,7 +43,7 @@
 				<li><a href="/al_inscribirse" class="mi-enlace">Inscriptos</a></li>
 			</ul>
 		</li>
-		<li class="lista-uno"><a href="/al_pretar" class="mi-enlace">PRESTACION</a></li>
+		<li class="lista-uno"><a href="/al_prestar" class="mi-enlace">PRESTACION</a></li>
 		<li class="lista-uno"><a href="/" class="mi-enlace">CERRAR SESION</a></li>
 	</ul>
 </nav>
