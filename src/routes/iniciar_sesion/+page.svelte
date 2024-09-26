@@ -1,11 +1,7 @@
 <script>
  	import logo from '$lib/images/logo_chiquito.jpg';
 
-     function validarCredenciales() {
-            
-    
-
-            
+     function validarCredenciales [    
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
 
@@ -18,7 +14,12 @@
                 
                 alert("Usuario o contraseña incorrectos. Intente nuevamente.");
             }
-        }
+		]
+            
+    
+
+        
+        
     
 	
 </script>
