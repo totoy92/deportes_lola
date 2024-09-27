@@ -1,5 +1,5 @@
-import { sqliteTable,  integer, text,numeric, foreignKey } from "drizzle-orm/sqlite-core"
-  import { sql } from "drizzle-orm"
+import { sqliteTable, integer, text, numeric } from "drizzle-orm/sqlite-core"
+
 
 export const inscripciones = sqliteTable("inscripciones", {
 	id: integer("id").primaryKey({ autoIncrement: true }),
@@ -33,7 +33,6 @@ export const prestamos = sqliteTable("prestamos", {
 export const deportistasTorneos = sqliteTable("deportistas_torneos", {
 	idDeportistaTorneo: integer("id_deportista_torneo").primaryKey({ autoIncrement: true }),
 	idUsuario: integer("id_usuario").notNull().references(() => usuarios.idUsuario, { onDelete: "cascade" } ),
-	idTorneo: integer("id_torneo").notNull().references(() => torneos.idTorneo, { onDelete: "cascade" } ),
 });
 
 export const usuarios = sqliteTable("usuarios", {
