@@ -22,7 +22,10 @@
       } else 
 	  {
         alert("Usuario o contraseña incorrectos. Intente nuevamente.");
-      }
+      }else  {
+      console.error("No se encontraron los campos de usuario o contraseña.");
+    }
+  }
    
   }
 }
