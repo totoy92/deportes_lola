@@ -1,25 +1,30 @@
 <script>
 	import logo from '$lib/images/logo_chiquito.jpg';
 
-	function validarCredenciales(event: SubmitEvent) {
-		event.preventDefault();
+	function validarCredenciales(event = SubmitEvent) {
+    event.preventDefault();
+    const usernameInput = document.getElementById("username");
+    const passwordInput = document.getElementById("password");
 
-		const usernameInput = document.getElementById('username');
-		const passwordInput = document.getElementById('password');
+    if (usernameInput instanceof HTMLInputElement && passwordInput instanceof HTMLInputElement) {
+      const username = usernameInput.value;
+      const password = passwordInput.value;
 
-		if (usernameInput instanceof HTMLInputElement && passwordInput instanceof HTMLInputElement) {
-			const username = usernameInput.value;
-			const password = passwordInput.value;
+      
+      const users = {
+        "lisiria": "0293",
+        "william": "1111"
+      };
 
-			if (username === 'william' && password === '1111') {
-				window.location.href = '/al_novedades';
-			} else {
-				alert('Usuario o contraseña incorrectos. Intente nuevamente.');
-			}
-		} else {
-			console.error('No se encontraron los campos de usuario o contraseña.');
-		}
-	}
+      
+      if (users[username] && users[username] === password) {
+        window.location.href = "/al_novedades";
+      } else 
+	  {
+        alert("Usuario o contraseña incorrectos. Intente nuevamente.");
+      }
+   
+  }
 </script>
 
 <nav class="menu">
