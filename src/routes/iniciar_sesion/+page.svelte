@@ -12,7 +12,7 @@
 			const password = passwordInput.value;
 
 			if (username === 'william' && password === '1111') {
-				window.location.href = '/al_iniciar.html';
+				window.location.href = '/al_novedades';
 			} else {
 				alert('Usuario o contraseña incorrectos. Intente nuevamente.');
 			}
