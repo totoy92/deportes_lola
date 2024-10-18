@@ -11,7 +11,7 @@
 			const username = usernameInput.value;
 			const password = passwordInput.value;
 
-			if (username === 'lisiria' && password === '0293') {
+			if (username === 'william' && password === '1111') {
 				window.location.href = '/al_iniciar.html';
 			} else {
 				alert('Usuario o contraseña incorrectos. Intente nuevamente.');
