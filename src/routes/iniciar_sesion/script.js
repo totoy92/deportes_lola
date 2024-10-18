@@ -7,7 +7,7 @@ function validarCredenciales(event) {
     var password = document.getElementById("password").value;
 
     if (username === "lisiria" && password === "0293") {
-        window.location.href = "/al_inscribirse";
+        window.location.href = "/al_novedades;
     } else {
         alert("Usuario o contraseña incorrectos. Intente nuevamente.");
     }
