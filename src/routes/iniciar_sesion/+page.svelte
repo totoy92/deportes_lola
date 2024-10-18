@@ -25,6 +25,7 @@
       }
    
   }
+}
 </script>
 
 <nav class="menu">
