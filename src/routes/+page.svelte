@@ -15,7 +15,7 @@
 					<li><a href="/inscripcion" class="mi-enlace">Inscripción intercolegiados</a></li>
 				</ul>
 			</li>
-			<li class="lista-uno"><a href="/prestacion" class="mi-enlace">PRESTACION</a></li>
+			<li class="lista-uno"><a href="/prestacion" class="mi-enlace">PRESTAMO</a></li>
 			<li class="lista-uno"><a href="/iniciar_sesion" class="mi-enlace">INICIAR SESION</a></li>
 		</ul>
 	</div>
